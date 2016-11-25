@@ -9,6 +9,8 @@ set $xrandr  /usr/share/i3/xrandr.sh
 set $i3power /usr/share/i3/power.sh
 
 exec --no-startup-id $xrandr
+exec --no-startup-id xss-lock $i3power lock
+
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
